@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+	<title>Portafolio</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script> //suavisa la translacion del parallax
+		  $(function() {
+		    $('a[href*="#"]:not([href="#"])').click(function() {
+		      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		        var target = $(this.hash);
+		        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		        if (target.length) {
+		          $('html, body').animate({
+		            scrollTop: target.offset().top
+		          }, 1000);
+		          return false;
+		        }
+		      }
+		    });
+		  });  
+	</script>
+</head>
+
+<body>
+
+<ul class="side_nav">
+<li><a class="scroll" href="#home"></a></li>
+<li><a class="scroll" href="#about"></a></li>
+<li><a class="scroll" href="#skills"></a></li>
+<li><a class="scroll" href="#exp"></a></li>
+<li><a class="scroll" href="#gallery"></a></li>
+<li><a class="scroll" href="#contact"></a></li>
+</ul>
+
+	<img id="home" class="img-responsive" src="img/banner.png" alt="sebastian ramirez">
+
+<!--
+	<div class="conten-flex">
+		<a href="#" class="item"><item >Facebook</item></a>
+		<a href="#" class="item"><item >linkeid</item></a>
+		<a href="#info" class="item"><item >email</item></a>
+		
+	</div>
+-->
+
+<section>
+
+	<div class="contieneacercade">
+		<h3 id="about" class="titulo">Acerca De</h3>
+		<div class="contenedor-flex col-md-12">
+			<div class="itemacercade">
+				<img class="img-responsive retrato" src="img/sebas.jpg" alt="sebastian-ramirez">
+			</div>
+			<div class="itemaparrafo">
+				<span>Soy una persona  responsable y puntual, para mi el tiempo es muy importante. 
+					Me gusta investigar para aprender y asi alimentar dia a dia mis conocimientos 
+					con el fin de ponerlos en practica en la optimizacion de cada proyecto que se 
+					me asigna.
+				</span>	
+
+				<div class="rowedu">
+					<img class="img-responsive" src="img/iconoeducacion.png" alt="educacion" style="height:  12%;width: 12%;"> 
+					<span class="educacion">
+					Obtuve mi Título de bachiller en la Institución 
+					Educativa Técnica de Comercio Simón Rodríguez
+					en el año 2013.
+					</span>
+				</div>
+				<div class="rowedu">
+					<img class="img-responsive" src="img/iconoeducacion.png" alt="educacion" style="height:  12%;width: 12%;"> 
+					<span class="educacion">
+					Actualmente soy Tecnico profesional en Diseño multimedial egresado de la Academia De Dibujo Profesional.
+					</span>
+				</div>
+				<div class="rowedu">
+					<img class="img-responsive" src="img/iconoeducacion.png" alt="educacion" style="height:  12%;width: 12%;"> 
+					<span class="educacion">
+					Actualmente estudiante de ultimo nivel de ingles
+					intermediate 2 en el Colombo Americano.
+					</span>
+				</div>
+
+				<div class="item-flex">
+					
+					<div class="itemedu">
+					<a class="marcoluz" href="https://www.fadp.edu.co/" target="_blank">
+						<img class="img-responsive marcoluz" src="img/fadp.png" alt="funcadion_academia_dibujo_profesional">
+					</a>	
+					</div>
+					<div class="itemedu">	
+					<a class="marcoluz" href="https://www.colomboamericano.edu.co/" target="_blank">
+						<img class="img-responsive marcoluz" src="img/colombo.png" alt="colombo_americano">
+					</a>	
+					</div>	
+					
+				</div>			
+			</div>
+		</div>
+	</div>
+	
+
+
+
+</section>	
+
+<section >
+	
+	<div class="contieneskills">
+		<h3 id="skills" class="titulo" style="color: #2298b9; text-shadow: initial;">Habilidades</h3>
+
+		<ul  class="grid-ul">
+
+			<div class="grid-skill" role="progressbar" data-percentage="60" ><span>Adobe Photoshop<li class="progress-bar-ps"> </li></span><span>Adobe Illustrator<li class="progress-bar-illustrator"> </li></span></div>
+			<div class="grid-skill"><span>Corel Draw<li class="progress-corel"> </li></span><span>Adobe Premiere<li class="progress-premiere"> </li></span></div>
+			<div class="grid-skill"><span>Adobe After Effects<li class="progress-af"> </li></span><span>Autodesk Maya<li class="progress-maya"> </li></span></div>
+			<div class="grid-skill"><span>HTML<li class="progress-html"> </li></span><span>CSS<li class="progress-css"> </li></span></div>
+			<div class="grid-skill"><span>Flex Box<li class="progress-cssgrid"> </li></span><span>Css Grid<li class="progress-flexbox"> </li></span></div>
+			<div class="grid-skill"><span>Wordpress<li class="progress-wp"> </li></span><span>Unreal Engine 4<li class="progress-unreal"> </li></span></div>
+			
+					
+		</ul>
+	</div>
+</section>
+
+<!--     experiencias-->
+<section class="backgroundnegro">
+	<div class="row">
+		<div class="itemfila">
+		<h3 id="exp" class="titulo">Experiencias</h3>
+		</div>
+		<div class="itemfila">
+			<img src="img/exp2014.png" alt="">
+			<p class="parrafoexp">Diseñador multimedial trabajando para la empresa Ayala Design como diseñador e instalador de accesorios visuales para vehiculos automotores en CorelDraw.
+			<strong >Referencia: </strong><span>Javier Ayala Cel: 3879420 / 3167549340</span>
+			</p>
+		</div>
+			
+
+		<div class="itemfila">
+			<img src="img/exp2015.png" alt="">
+			<p class="parrafoexp">Diseñador Multimedial trabajando para la Empresa Rodriguez Editores como diseñador e instalador de publicidad mercantil en vinilo y otros. 
+			<strong >Referencia: </strong><span>Andres F. Rodriguez  Cel: 3188190631</span>
+			</p>
+		</div>
+		<div class="itemfila">
+			<img src="img/exp2016.png" alt="">
+			<p class="parrafoexp">Diseñador multimedial trabajando para Ipsum Agencia como modelador de renders, maquetador de paginas web e instalador de publicidad mercantil en vinilo y otros.
+			<strong >Referencia: </strong><span>Francia Escobar G. Cel: 3013621269</span>
+			</p>
+		</div>
+		<div class="itemfila">
+			<img src="img/exp2017.png" alt="">
+			<p class="parrafoexp">Diseñador multimedial trabajando para la agencia de Estrategia e innovación en soluciones web (EISO) como maquetador web ya sea en html/css o wordpress y animaciones para correo electronico y mailchimp.
+			<strong >Referencia: </strong><span>Tel: (57) 380-45-60</span>
+			</p>
+		</div>
+		
+
+		
+	</div>
+</section>
+
+<section>
+
+	<div class="row-portafolio">
+		<div class="itemfila">
+		<h3 id="gallery" class="titulo">Galeria</h3></div>
+			<ul id="portfolio-list" data-animated="fadeIn">
+		            <li>
+		              <img src="img/trabajo (1).jpg" alt="">
+		              <div class="portfolio-item-content">
+		              </div>
+		              <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="more">+</i></a>
+					</li>
+		            <li>
+		           
+				<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+      					<img src="img/trabajo (1).jpg" alt="">
+				    </div>
+				  </div>
+				</div>
+		              <img src="img/trabajo (1).png" alt="">
+		              <div class="portfolio-item-content">
+		                </div>
+		              <a href="#" data-toggle="modal" data-target="#trabajo2"><i class="more">+</i></a>
+					</li>
+		            <li>
+		           
+				<div id="trabajo2" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+      					<img src="img/trabajo (1).png" alt="">
+				    </div>
+				  </div>
+				</div>
+		              <img src="img/trabajo-(2).jpg" alt="" >
+		              <div class="portfolio-item-content">
+		                 </div>
+		              <a href="#" data-toggle="modal" data-target="#trabajo3"><i class="more">+</i></a>
+					</li>
+		            <li>
+		           
+				<div id="trabajo3" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+      					<img src="img/trabajo-(2).jpg" alt="">
+				    </div>
+				  </div>
+				</div>
+		              <img src="img/trabajo (2).png" alt="">
+		              <div class="portfolio-item-content">
+		                  </div>
+		              <a href="#" data-toggle="modal" data-target="#trabajo4"><i class="more">+</i></a>
+					</li>
+		            <li>
+		           
+				<div id="trabajo4" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+      					<img src="img/trabajo (2).png" alt="">
+				    </div>
+				  </div>
+				</div>
+		              <img src="img/trabajo (3).jpg" alt="">
+		              <div class="portfolio-item-content">
+		                </div>
+		              <a href="#" data-toggle="modal" data-target="#trabajo5"><i class="more">+</i></a>
+					</li>
+		            <li>
+		           
+				<div id="trabajo5" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+      					<img src="img/trabajo (3).jpg" alt="">
+				    </div>
+				  </div>
+				</div>
+		              <img src="img/trabajo (3).png" alt="">
+		              <div class="portfolio-item-content">
+		                 </div>
+		              <a href="#" data-toggle="modal" data-target="#trabajo6"><i class="more">+</i></a>
+					</li>
+		            <li>
+		           
+				<div id="trabajo6" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+      					<img src="img/trabajo (3).png" alt="">
+				    </div>
+				  </div>
+				</div>
+		              <img src="img/trabajo (4).jpg" alt="">
+		              <div class="portfolio-item-content">
+		                </div>
+		              <a href="#" data-toggle="modal" data-target="#trabajo7"><i class="more">+</i></a>
+					</li>
+		            <li>
+		           
+				<div id="trabajo7" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+      					<img src="img/trabajo (4).jpg" alt="">
+				    </div>
+				  </div>
+				</div>
+		              <img src="img/trabajo (4).png" alt="">
+		              <div class="portfolio-item-content">
+		                </div>
+		              <a href="#" data-toggle="modal" data-target="#trabajo8"><i class="more">+</i></a>
+					</li>
+		            <li>
+		           
+				<div id="trabajo8" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+      					<img src="img/trabajo (4).png" alt="">
+				    </div>
+				  </div>
+				</div>
+		              <img src="img/trabajo (5).jpg" alt="">
+		              <div class="portfolio-item-content">
+		                 </div>
+		              <a href="#" data-toggle="modal" data-target="#trabajo9"><i class="more">+</i></a>
+					</li>
+		            <li>
+		           
+				<div id="trabajo9" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+      					<img src="img/trabajo (5).jpg" alt="">
+				    </div>
+				  </div>
+				</div>
+		              <img src="img/trabajo (6).png" alt="">
+		              <div class="portfolio-item-content">
+		                 </div>
+		              <a href="#" data-toggle="modal" data-target="#trabajo10"><i class="more">+</i></a>
+					</li>
+		            <li>
+		           
+				<div id="trabajo10" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+      					<img src="img/trabajo (6).png" alt="">
+				    </div>
+				  </div>
+				</div>
+		              <img src="img/trabajo (7).jpg" alt="">
+		              <div class="portfolio-item-content">
+		                 </div>
+		              <a href="#" data-toggle="modal" data-target="#trabajo11"><i class="more">+</i></a>
+					</li>
+		            <li>
+		           
+				<div id="trabajo11" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+      					<img src="img/trabajo (7).jpg" alt="">
+				    </div>
+				  </div>
+				</div>
+		              <img src="img/trabajo (8).jpg" alt="">
+		              <div class="portfolio-item-content">
+		                </div>
+		              <a href="#" data-toggle="modal" data-target="#trabajo12"><i class="more">+</i></a>
+					</li>
+		            <li>
+		           
+				<div id="trabajo12" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+      					<img src="img/trabajo (8).jpg" alt="">
+				    </div>
+				  </div>
+				</div>
+		          </ul>
+		          </div>
+</section>
+
+<section class="">
+<div class="row-portafolio">
+		<div class="itemfila">
+		<h3 id="exp" class="titulo">Animacíones y Montajes</h3></div>
+			<ul id="portfolio-list" class="portafolio-list-flex" data-animated="fadeIn">
+		           
+		            <li>
+		              <img src="img/Mariposa-Definitivo.gif" alt="">
+		                
+
+		            </li>
+		            <li>
+		            	<img src="img/Ranadefinitiva.gif" alt="">
+		            	             
+		              <img src="img/Virtual PSE.gif" alt="" >
+		             	             
+
+		        	</li>
+		            	  
+		             <li>
+		              <img src="img/libro.jpeg" alt="">
+		                
+
+		            </li>
+		            <li>
+		            	<img src="img/botella.jpeg" alt="">
+		            	             
+		              <img src="img/usb personal.png" alt="" >
+		             	             
+
+		        	</li>	         
+		          </ul>
+
+		          </div>
+</section>
+<section class="contacto" id="contact">
+	<div id="datos">
+			<div class="container">
+				
+				<span> Contactame al </span>
+				<strong>3176794191</strong>
+			</div>
+		</div>
+<div class="conten-flex">
+		<a href="https://www.facebook.com/sebas623" target="_blank" class="item"><item >Facebook</item></a>
+		<a href="https://www.linkedin.com/in/sebastian-ramirez-9067b4122/" class="item" target="_blank" ><item >Linkedin</item></a>
+		
+		
+	</div>
+<footer class="footer">
+	<h3 id="info" class="titulo">Más informacíon</h3>
+
+		<div id="info" class="container-info">
+				
+				<span> Correo Electrónico </span><br><br>
+				<strong>Sebasrv623@gmail.com</strong>
+			</div>
+
+	
+
+	
+</footer>	
+</section>
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+	
+</body>
+</html>
